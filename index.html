@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hastin-user authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="assest/user.webp" alt="profile" style="width: 90px;height: 90px;margin-left: 130px;">
+       
+        <h2>Welcome! Log In</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Enter username ">
+            <p class="error" id="usernameError"></p>
+
+            <input type="password" id="password" placeholder="Enter password">
+            <p class="error" id="passwordError"></p>
+
+            <button type="submit"><b>LOGIN</b></button>
+            <p class="message" id="loginMessage"></p>
+        </form>
+        <!--OTP sent section-->
+        <div id="otpBox" class="otp-box" style="display: none;">
+            <h3>OTP Sent Successfully!</h3>
+            <p>Your OTP is:<strong id="otpDisplay"></strong></p>
+            <p>Expires in <span id="timer">30</span>seconds</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
