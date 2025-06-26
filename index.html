@@ -11,21 +11,30 @@
         <img src="assest/user.webp" alt="profile" style="width: 90px;height: 90px;margin-left: 130px;">
        
         <h2>Welcome! Log In</h2>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="Enter username ">
-            <p class="error" id="usernameError"></p>
+ <form id="loginForm">
+  <div style="text-align: center;" >
+    <input type="text" id="username" placeholder="Enter username" autocomplete="username" class="input-item">
+     <p class="error" id="usernameError"></p>
 
-            <input type="password" id="password" placeholder="Enter password">
-            <p class="error" id="passwordError"></p>
+  <input type="password" id="password" placeholder="Enter password" autocomplete="current-password" class="input-item">
+   <p class="error" id="passwordError"></p>
+  
+  </div><br>
+  <input type="checkbox" onclick="my()"><span>Show password</span>
+ 
+  <!--Forgot password-->
+  <p class="forgot"><a href="#" onclick="forgotpassword()">Forgot Password?</a></p>
 
-            <button type="submit"><b>LOGIN</b></button>
-            <p class="message" id="loginMessage"></p>
-        </form>
-        <div id="otpBox" class="otp-box" style="display: none;">
+  <button type="submit"><b>LOGIN</b></button>
+  
+  <p class="message" id="loginMessage"></p>
+</form>
+
+        <!-- <div id="otpBox" class="otp-box" style="display: none;">
             <h3>OTP Sent Successfully!</h3>
             <p>Your OTP is:<strong id="otpDisplay"></strong></p>
             <p>Expires in <span id="timer">30</span>seconds</p>
-        </div>
+        </div> -->
     </div>
     <script src="script.js"></script>
     
