@@ -19,23 +19,41 @@
   <input type="password" id="password" placeholder="Enter password" autocomplete="current-password" class="input-item">
    <p class="error" id="passwordError"></p>
   
-  </div><br>
-  <input type="checkbox" onclick="my()"><span>Show password</span>
+  </div>
+  <div class="Show">
+  <input type="checkbox" onclick="my()" ><span>Show password</span>
+ </div>
  
-  <!--Forgot password-->
-  <p class="forgot"><a href="#" onclick="forgotpassword()">Forgot Password?</a></p>
+  <!-- <p class="forgot"><a href="#" onclick="forgotpassword()">Forgot Password?</a></p> -->
 
-  <button type="submit"><b>LOGIN</b></button>
-  
+  <button type="submit" class="btn"><b>LOGIN</b></button>
+ 
   <p class="message" id="loginMessage"></p>
 </form>
 
-        <!-- <div id="otpBox" class="otp-box" style="display: none;">
-            <h3>OTP Sent Successfully!</h3>
-            <p>Your OTP is:<strong id="otpDisplay"></strong></p>
-            <p>Expires in <span id="timer">30</span>seconds</p>
-        </div> -->
+        
     </div>
+
+    <!-- OTP Modal -->
+  <div id="otpModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeOtpModal()">&times;</span>
+      <h3>OTP VERIFICATION</h3>
+      <p>We've sent an OTP to +6591495625 **</p>
+      <p>Please enter the OTP below</p>
+      <div class="otp-row">
+        <div id="opaque" class="opaque"></div>
+        <span>-</span>
+        <input type="text" id="otpInput" placeholder="Access code">
+      </div>
+      <div class="otp-footer">
+        <button onclick="resendOtp()">Resend OTP</button>
+        <span id="timer">00:30</span>
+      </div> <br>
+      <button onclick="submitOTP()" style="margin-left: 30px;border-radius: 50px;">Submit</button>
+    </div>
+  </div>
+
     <script src="script.js"></script>
     
 </body>

@@ -16,7 +16,7 @@ body{
     box-shadow: 0 0 10px #ccc;
     width:330px;
     align-items: center;
-    margin-top: 104px;
+    margin-top: 55px;
 }
 
 .input-item{
@@ -28,15 +28,16 @@ body{
     
 }
 
-button {
+.btn {
   width: 50%;
   padding: 10px;
-  background: rgb(210, 27, 100);
-  color: white;
+ background-color: red;
+  color:white;
   border: none;
   cursor: pointer;
   border-radius: 19px;
   margin-left: 80px;
+  margin-top: 20px;
 }
 
 h2{
@@ -47,6 +48,7 @@ h2{
     color: red;
     font-size: 12px;
     margin: 0;
+    margin-right: 160px;
 }
 
 .message{
@@ -72,13 +74,70 @@ h2{
     color: red;
 }
 
-/* OTP Box styling */
-.otp-box {
-  margin-top: 20px;
-  background: #f9f9f9;
-  border-left: 5px solid #28a745;
-  padding: 10px;
-  border-radius: 5px;
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  position: relative;
   text-align: center;
 }
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+
+.otp-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+#opaque {
+  background: #eee;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#otpInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.otp-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.Show{
+    margin-left:  20px;
+  
+}
+
+
+
 
