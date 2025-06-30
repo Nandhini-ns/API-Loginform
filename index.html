@@ -6,11 +6,9 @@
     <title>Hastin-user authentication</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
     <div class="login-container">
-        <img src="assest/user.webp" alt="profile" style="width: 90px;height: 90px;margin-left: 130px;">
-       
-        <h2>Welcome! Log In</h2>
+       <h2>Welcome! Log In</h2>
  <form id="loginForm">
   <div style="text-align: center;" >
     <input type="text" id="username" placeholder="Enter username" autocomplete="username" class="input-item">
@@ -24,9 +22,12 @@
   <div class="Show">
   <input type="checkbox" onclick="my()" ><span>Show password</span>
  </div>
+ <br>
  
 
-  <button type="submit" class="btn"><b>LOGIN</b></button>
+ <div style="display: flex; justify-content: center;">
+   <button type="submit" class="btn"><b>LOGIN</b></button>
+ </div>
  
   <p class="message" id="loginMessage"></p>
 </form>
